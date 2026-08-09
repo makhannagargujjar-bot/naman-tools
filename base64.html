@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Base64 Encoder | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="base64-body">
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+        <a href="index.html" class="tool-back">
+            <span>←</span>
+            <span>Back</span>
+        </a>
+
+    </header>
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="base64-page">
+
+        <!-- HERO -->
+
+        <section class="base64-hero">
+
+            <div class="base64-icon">
+                64
+            </div>
+
+            <h1>
+                Base64 Converter
+            </h1>
+
+            <p>
+                Encode and decode text with Base64
+                quickly and securely in your browser.
+            </p>
+
+        </section>
+
+
+        <!-- TOOL CARD -->
+
+        <section class="base64-card">
+
+            <!-- INPUT -->
+
+            <div class="base64-field">
+
+                <label for="base64Input">
+                    Enter Text
+                </label>
+
+                <textarea
+                    id="base64Input"
+                    spellcheck="false"
+                    placeholder="Enter text or Base64 data here..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="base64-actions">
+
+                <button
+                    type="button"
+                    id="encodeBase64"
+                    class="base64-primary-btn"
+                >
+                    Encode
+                </button>
+
+                <button
+                    type="button"
+                    id="decodeBase64"
+                    class="base64-secondary-btn"
+                >
+                    Decode
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="base64-result-box">
+
+                <div class="base64-result-header">
+
+                    <span>
+                        Result
+                    </span>
+
+                    <button
+                        type="button"
+                        id="copyBase64"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+                <textarea
+                    id="base64Result"
+                    readonly
+                    spellcheck="false"
+                    placeholder="Your result will appear here..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- STATUS -->
+
+            <div
+                id="base64Status"
+                class="base64-status"
+            ></div>
+
+
+            <!-- CLEAR -->
+
+            <button
+                type="button"
+                id="clearBase64"
+                class="base64-clear-btn"
+            >
+                Clear
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

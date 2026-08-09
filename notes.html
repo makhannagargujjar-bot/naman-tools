@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Quick Notes | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="notes-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="notes-page">
+
+
+        <!-- HERO -->
+
+        <section class="notes-hero">
+
+            <div class="notes-icon">
+                📝
+            </div>
+
+            <h1>
+                Quick Notes
+            </h1>
+
+            <p>
+                Write, save and manage your notes
+                quickly in your browser.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             NOTES CARD
+        ================================= -->
+
+        <section class="notes-card">
+
+
+            <!-- TITLE -->
+
+            <div class="notes-title-field">
+
+                <label for="noteTitle">
+                    Note Title
+                </label>
+
+                <input
+                    type="text"
+                    id="noteTitle"
+                    placeholder="Enter note title..."
+                    maxlength="80"
+                >
+
+            </div>
+
+
+
+            <!-- NOTE -->
+
+            <div class="notes-text-field">
+
+                <label for="noteText">
+                    Your Note
+                </label>
+
+                <textarea
+                    id="noteText"
+                    placeholder="Write your note here..."
+                    maxlength="5000"
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- SAVE -->
+
+            <button
+                type="button"
+                id="saveNote"
+                class="notes-save-btn"
+            >
+                💾 Save Note
+            </button>
+
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="notesMessage"
+                class="notes-message"
+            ></div>
+
+
+
+            <!-- SAVED NOTES -->
+
+            <div class="saved-notes-section">
+
+                <div class="saved-notes-header">
+
+                    <strong>
+                        Saved Notes
+                    </strong>
+
+                    <button
+                        type="button"
+                        id="clearAllNotes"
+                    >
+                        Clear All
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="notesList"
+                    class="notes-list"
+                >
+
+                    <div class="empty-notes">
+                        No notes saved yet.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

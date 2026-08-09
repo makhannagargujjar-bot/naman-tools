@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Countdown Timer | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="countdown-page-body">
+
+
+    <!-- PREMIUM TOOL HEADER -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="countdown-page">
+
+
+        <!-- HERO -->
+
+        <section class="countdown-hero">
+
+            <div class="countdown-icon">
+                ⏳
+            </div>
+
+            <h1>
+                Countdown Timer
+            </h1>
+
+            <p>
+                Set a time and count down
+                to zero with ease.
+            </p>
+
+        </section>
+
+
+
+        <!-- TIMER CARD -->
+
+        <section class="countdown-card">
+
+
+            <!-- TIME DISPLAY -->
+
+            <div
+                id="countdownDisplay"
+                class="countdown-display"
+            >
+
+                <span id="countdownHours">
+                    00
+                </span>
+
+                <small>:</small>
+
+                <span id="countdownMinutes">
+                    00
+                </span>
+
+                <small>:</small>
+
+                <span id="countdownSeconds">
+                    00
+                </span>
+
+            </div>
+
+
+
+            <!-- STATUS -->
+
+            <div
+                id="countdownStatus"
+                class="countdown-status"
+            >
+                Ready
+            </div>
+
+
+
+            <!-- TIME INPUTS -->
+
+            <div class="countdown-input-title">
+                Set Timer
+            </div>
+
+
+            <div class="countdown-input-grid">
+
+
+                <div class="countdown-field">
+
+                    <label for="countdownHoursInput">
+                        Hours
+                    </label>
+
+                    <input
+                        type="number"
+                        id="countdownHoursInput"
+                        min="0"
+                        max="99"
+                        value="0"
+                        inputmode="numeric"
+                    >
+
+                </div>
+
+
+
+                <div class="countdown-field">
+
+                    <label for="countdownMinutesInput">
+                        Minutes
+                    </label>
+
+                    <input
+                        type="number"
+                        id="countdownMinutesInput"
+                        min="0"
+                        max="59"
+                        value="5"
+                        inputmode="numeric"
+                    >
+
+                </div>
+
+
+
+                <div class="countdown-field">
+
+                    <label for="countdownSecondsInput">
+                        Seconds
+                    </label>
+
+                    <input
+                        type="number"
+                        id="countdownSecondsInput"
+                        min="0"
+                        max="59"
+                        value="0"
+                        inputmode="numeric"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONTROLS -->
+
+            <div class="countdown-controls">
+
+                <button
+                    type="button"
+                    id="countdownStart"
+                    class="countdown-start"
+                >
+                    ▶ Start
+                </button>
+
+
+                <button
+                    type="button"
+                    id="countdownPause"
+                    class="countdown-pause"
+                    disabled
+                >
+                    ⏸ Pause
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="countdownReset"
+                class="countdown-reset"
+            >
+                🔄 Reset Timer
+            </button>
+
+
+            <div
+                id="countdownMessage"
+                class="countdown-message"
+            ></div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

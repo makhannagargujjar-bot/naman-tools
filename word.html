@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#2563eb">
+
+    <title>Word Counter | Naman Tools</title>
+
+    <!-- Main Naman Tools CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header-inner">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">NT</span>
+
+                <span>Naman Tools</span>
+
+            </a>
+
+
+            <a href="index.html" class="back-btn">
+                ← Back
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- WORD COUNTER -->
+
+    <main class="tool-page">
+
+
+        <section class="tool-header">
+
+            <h1>📝 Word Counter</h1>
+
+            <p>
+                Count words, characters and sentences easily.
+            </p>
+
+        </section>
+
+
+
+        <section class="tool-card">
+
+
+            <textarea
+                id="wordInput"
+                placeholder="Type or paste your text here..."
+            ></textarea>
+
+
+
+            <div class="word-stats">
+
+
+                <div class="stat-box">
+
+                    <span id="wordCount">0</span>
+
+                    <small>
+                        Words
+                    </small>
+
+                </div>
+
+
+
+                <div class="stat-box">
+
+                    <span id="charCount">0</span>
+
+                    <small>
+                        Characters
+                    </small>
+
+                </div>
+
+
+
+                <div class="stat-box">
+
+                    <span id="sentenceCount">0</span>
+
+                    <small>
+                        Sentences
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+
+            <button
+                id="clearText"
+                class="clear-btn"
+            >
+                Clear Text
+            </button>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

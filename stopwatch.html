@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Stopwatch | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="stopwatch-page-body">
+
+
+    <!-- HEADER -->
+
+    <!-- PREMIUM TOOL HEADER -->
+
+<header class="tool-top-header">
+
+    <a href="index.html" class="tool-brand">
+
+        <span class="tool-brand-icon">
+            NT
+        </span>
+
+        <span class="tool-brand-name">
+            Naman Tools
+        </span>
+
+    </a>
+
+
+    <a href="index.html" class="tool-back">
+        <span>←</span>
+        <span>Back</span>
+    </a>
+
+</header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="stopwatch-page">
+
+
+        <!-- HERO -->
+
+        <section class="stopwatch-hero">
+
+            <div class="stopwatch-icon">
+                ⏱️
+            </div>
+
+            <h1>
+                Stopwatch
+            </h1>
+
+            <p>
+                Track time accurately with a
+                simple and professional stopwatch.
+            </p>
+
+        </section>
+
+
+
+        <!-- CARD -->
+
+        <section class="stopwatch-card">
+
+
+            <!-- TIME -->
+
+            <div
+                id="stopwatchDisplay"
+                class="stopwatch-display"
+            >
+                <span id="stopwatchHours">00</span>
+                <small>:</small>
+                <span id="stopwatchMinutes">00</span>
+                <small>:</small>
+                <span id="stopwatchSeconds">00</span>
+                <b>.</b>
+                <em id="stopwatchMilliseconds">00</em>
+            </div>
+
+
+
+            <!-- STATUS -->
+
+            <div
+                id="stopwatchStatus"
+                class="stopwatch-status"
+            >
+                Ready
+            </div>
+
+
+
+            <!-- CONTROLS -->
+
+            <div class="stopwatch-controls">
+
+                <button
+                    type="button"
+                    id="stopwatchStart"
+                    class="stopwatch-start"
+                >
+                    ▶ Start
+                </button>
+
+
+                <button
+                    type="button"
+                    id="stopwatchPause"
+                    class="stopwatch-pause"
+                    disabled
+                >
+                    ⏸ Pause
+                </button>
+
+            </div>
+
+
+            <div class="stopwatch-secondary">
+
+                <button
+                    type="button"
+                    id="stopwatchLap"
+                    disabled
+                >
+                    🏁 Lap
+                </button>
+
+
+                <button
+                    type="button"
+                    id="stopwatchReset"
+                >
+                    🔄 Reset
+                </button>
+
+            </div>
+
+
+
+            <!-- LAPS -->
+
+            <div class="laps-section">
+
+                <div class="laps-header">
+
+                    <h2>
+                        Laps
+                    </h2>
+
+                    <span id="lapCount">
+                        0
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="lapList"
+                    class="lap-list"
+                >
+
+                    <div class="lap-empty">
+                        No laps recorded yet
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

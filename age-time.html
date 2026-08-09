@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Age in Time | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="age-time-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="age-time-page">
+
+
+        <!-- HERO -->
+
+        <section class="age-time-hero">
+
+            <div class="age-time-icon">
+                ⏳
+            </div>
+
+            <h1>
+                Age in Time
+            </h1>
+
+            <p>
+                Calculate your exact age in years,
+                months, days, hours, minutes and seconds.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CARD
+        ================================= -->
+
+        <section class="age-time-card">
+
+
+            <!-- DATE -->
+
+            <div class="age-time-field">
+
+                <label for="birthDate">
+                    Date of Birth
+                </label>
+
+                <input
+                    type="date"
+                    id="birthDate"
+                >
+
+            </div>
+
+
+
+            <!-- TIME -->
+
+            <div class="age-time-field">
+
+                <label for="birthTime">
+                    Time of Birth
+                </label>
+
+                <input
+                    type="time"
+                    id="birthTime"
+                >
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <button
+                type="button"
+                id="calculateAgeTime"
+                class="age-time-primary-btn"
+            >
+                Calculate My Age
+            </button>
+
+
+
+            <!-- RESULT -->
+
+            <div
+                id="ageTimeResult"
+                class="age-time-result"
+            >
+
+                <div class="age-time-placeholder">
+                    Enter your birth date and time
+                </div>
+
+            </div>
+
+
+
+            <!-- LIVE AGE -->
+
+            <div
+                id="ageTimeLive"
+                class="age-time-live"
+            >
+            </div>
+
+
+
+            <!-- CLEAR -->
+
+            <button
+                type="button"
+                id="clearAgeTime"
+                class="age-time-clear-btn"
+            >
+                Clear
+            </button>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

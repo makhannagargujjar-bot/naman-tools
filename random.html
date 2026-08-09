@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Random Number Generator | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="random-page-body">
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header-inner">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">NT</span>
+
+                <span>Naman Tools</span>
+
+            </a>
+
+
+            <a href="index.html" class="back-btn">
+                ← Back
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="random-page">
+
+
+        <!-- HERO -->
+
+        <section class="random-hero">
+
+            <div class="random-icon">
+                🎲
+            </div>
+
+            <h1>
+                Random Number Generator
+            </h1>
+
+            <p>
+                Generate random numbers quickly
+                and easily.
+            </p>
+
+        </section>
+
+
+
+        <!-- CARD -->
+
+        <section class="random-card">
+
+
+            <!-- NUMBER SETTINGS -->
+
+            <div class="random-input-grid">
+
+
+                <div class="random-field">
+
+                    <label for="randomMin">
+                        Minimum
+                    </label>
+
+                    <input
+                        type="number"
+                        id="randomMin"
+                        value="1"
+                        inputmode="numeric"
+                    >
+
+                </div>
+
+
+
+                <div class="random-field">
+
+                    <label for="randomMax">
+                        Maximum
+                    </label>
+
+                    <input
+                        type="number"
+                        id="randomMax"
+                        value="100"
+                        inputmode="numeric"
+                    >
+
+                </div>
+
+
+
+                <div class="random-field random-quantity">
+
+                    <label for="randomQuantity">
+                        Numbers
+                    </label>
+
+                    <input
+                        type="number"
+                        id="randomQuantity"
+                        value="1"
+                        min="1"
+                        max="100"
+                        inputmode="numeric"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- UNIQUE OPTION -->
+
+            <label class="random-option">
+
+                <input
+                    type="checkbox"
+                    id="uniqueNumbers"
+                >
+
+                <span>
+                    Don't repeat numbers
+                </span>
+
+            </label>
+
+
+
+            <!-- GENERATE -->
+
+            <button
+                type="button"
+                id="generateRandom"
+                class="random-generate"
+            >
+                🎲 Generate Numbers
+            </button>
+
+
+
+            <!-- RESULT -->
+
+            <div class="random-result-box">
+
+                <div class="random-result-top">
+
+                    <span>
+                        Result
+                    </span>
+
+                    <span id="randomCount">
+                        0 numbers
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="randomResult"
+                    class="random-result"
+                >
+                    <span class="random-placeholder">
+                        Your random numbers will appear here
+                    </span>
+                </div>
+
+            </div>
+
+
+
+            <!-- ACTIONS -->
+
+            <div class="random-actions">
+
+                <button
+                    type="button"
+                    id="copyRandom"
+                    class="random-copy"
+                >
+                    📋 Copy
+                </button>
+
+
+                <button
+                    type="button"
+                    id="clearRandom"
+                    class="random-clear"
+                >
+                    🗑️ Clear
+                </button>
+
+            </div>
+
+
+            <div
+                id="randomMessage"
+                class="random-message"
+            ></div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

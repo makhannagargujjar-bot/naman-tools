@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>URL Encoder Decoder | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="url-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="url-page">
+
+
+        <!-- HERO -->
+
+        <section class="url-hero">
+
+            <div class="url-icon">
+                🔗
+            </div>
+
+            <h1>
+                URL Encoder / Decoder
+            </h1>
+
+            <p>
+                Encode or decode URLs and text
+                quickly and securely in your browser.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             TOOL CARD
+        ================================= -->
+
+        <section class="url-card">
+
+
+            <div class="url-field">
+
+                <label for="urlInput">
+                    Enter URL or Text
+                </label>
+
+                <textarea
+                    id="urlInput"
+                    placeholder="Enter URL or text here..."
+                    spellcheck="false"
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- ACTIONS -->
+
+            <div class="url-actions">
+
+                <button
+                    type="button"
+                    id="encodeUrl"
+                    class="url-primary-btn"
+                >
+                    Encode URL
+                </button>
+
+
+                <button
+                    type="button"
+                    id="decodeUrl"
+                    class="url-secondary-btn"
+                >
+                    Decode URL
+                </button>
+
+            </div>
+
+
+
+            <!-- RESULT -->
+
+            <div class="url-result-box">
+
+                <div class="url-result-top">
+
+                    <span>
+                        Result
+                    </span>
+
+                    <button
+                        type="button"
+                        id="copyUrlResult"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="urlResult"
+                    readonly
+                    placeholder="Your result will appear here..."
+                    spellcheck="false"
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- CLEAR -->
+
+            <button
+                type="button"
+                id="clearUrl"
+                class="url-clear-btn"
+            >
+                Clear
+            </button>
+
+
+            <div
+                id="urlMessage"
+                class="url-message"
+            ></div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

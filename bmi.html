@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>BMI Calculator | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bmi-body">
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="bmi-page">
+
+
+        <!-- HERO -->
+
+        <section class="bmi-hero">
+
+            <div class="bmi-icon">
+                ⚖
+            </div>
+
+            <h1>
+                BMI Calculator
+            </h1>
+
+            <p>
+                Calculate your Body Mass Index
+                quickly and easily.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CALCULATOR
+        ================================= -->
+
+        <section class="bmi-card">
+
+
+            <!-- UNIT -->
+
+            <div class="bmi-unit-tabs">
+
+                <button
+                    type="button"
+                    class="bmi-unit-tab active"
+                    data-unit="metric"
+                >
+                    Metric
+                </button>
+
+
+                <button
+                    type="button"
+                    class="bmi-unit-tab"
+                    data-unit="imperial"
+                >
+                    Imperial
+                </button>
+
+            </div>
+
+
+
+            <!-- METRIC -->
+
+            <div
+                id="metricFields"
+                class="bmi-fields active"
+            >
+
+                <label for="heightCm">
+                    Height
+                </label>
+
+                <div class="bmi-input-wrap">
+
+                    <input
+                        type="number"
+                        id="heightCm"
+                        placeholder="Enter height"
+                        min="1"
+                        inputmode="decimal"
+                    >
+
+                    <span>cm</span>
+
+                </div>
+
+
+                <label for="weightKg">
+                    Weight
+                </label>
+
+                <div class="bmi-input-wrap">
+
+                    <input
+                        type="number"
+                        id="weightKg"
+                        placeholder="Enter weight"
+                        min="1"
+                        inputmode="decimal"
+                    >
+
+                    <span>kg</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IMPERIAL -->
+
+            <div
+                id="imperialFields"
+                class="bmi-fields"
+            >
+
+                <label for="heightFt">
+                    Height
+                </label>
+
+                <div class="bmi-height-row">
+
+                    <div class="bmi-input-wrap">
+
+                        <input
+                            type="number"
+                            id="heightFt"
+                            placeholder="Feet"
+                            min="0"
+                            inputmode="numeric"
+                        >
+
+                        <span>ft</span>
+
+                    </div>
+
+
+                    <div class="bmi-input-wrap">
+
+                        <input
+                            type="number"
+                            id="heightIn"
+                            placeholder="Inches"
+                            min="0"
+                            inputmode="decimal"
+                        >
+
+                        <span>in</span>
+
+                    </div>
+
+                </div>
+
+
+                <label for="weightLb">
+                    Weight
+                </label>
+
+                <div class="bmi-input-wrap">
+
+                    <input
+                        type="number"
+                        id="weightLb"
+                        placeholder="Enter weight"
+                        min="1"
+                        inputmode="decimal"
+                    >
+
+                    <span>lb</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CALCULATE -->
+
+            <button
+                type="button"
+                id="calculateBMI"
+                class="bmi-calculate-btn"
+            >
+                Calculate BMI
+            </button>
+
+
+
+            <!-- RESULT -->
+
+            <div class="bmi-result-box">
+
+                <span>
+                    Your BMI
+                </span>
+
+                <strong id="bmiResult">
+                    0.0
+                </strong>
+
+                <small id="bmiCategory">
+                    Enter your details
+                </small>
+
+            </div>
+
+
+
+            <!-- SCALE -->
+
+            <div class="bmi-scale">
+
+                <div class="bmi-scale-bar"></div>
+
+                <div class="bmi-scale-labels">
+
+                    <span>
+                        Underweight
+                    </span>
+
+                    <span>
+                        Normal
+                    </span>
+
+                    <span>
+                        Overweight
+                    </span>
+
+                    <span>
+                        Obesity
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COPY -->
+
+            <button
+                type="button"
+                id="copyBMI"
+                class="bmi-copy-btn"
+            >
+                📋 Copy Result
+            </button>
+
+
+            <div
+                id="bmiMessage"
+                class="bmi-message"
+            ></div>
+
+
+            <p class="bmi-note">
+                BMI is a general screening measure and
+                does not by itself diagnose health conditions.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

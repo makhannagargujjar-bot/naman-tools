@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Text Case Converter | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="case-page-body">
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="header-inner">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">NT</span>
+
+                <span>Naman Tools</span>
+
+            </a>
+
+
+            <a href="index.html" class="back-btn">
+                ← Back
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- TOOL -->
+
+    <main class="case-page">
+
+
+        <!-- TITLE -->
+
+        <section class="case-hero">
+
+            <div class="case-title-icon">
+                🔤
+            </div>
+
+            <h1>
+                Text Case Converter
+            </h1>
+
+            <p>
+                Quickly change your text to uppercase,
+                lowercase, title case and more.
+            </p>
+
+        </section>
+
+
+
+        <!-- MAIN CARD -->
+
+        <section class="case-card">
+
+
+            <!-- TEXT AREA -->
+
+            <div class="case-input-wrap">
+
+                <div class="case-input-top">
+
+                    <span>
+                        Your Text
+                    </span>
+
+                    <span id="caseCharCount">
+                        0 characters
+                    </span>
+
+                </div>
+
+
+                <textarea
+                    id="caseInput"
+                    placeholder="Type or paste your text here..."
+                    spellcheck="false"
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- ACTIONS -->
+
+            <div class="case-actions">
+
+                <button
+                    type="button"
+                    class="case-action"
+                    data-case="upper"
+                >
+                    <span>AA</span>
+                    UPPERCASE
+                </button>
+
+
+                <button
+                    type="button"
+                    class="case-action"
+                    data-case="lower"
+                >
+                    <span>aa</span>
+                    lowercase
+                </button>
+
+
+                <button
+                    type="button"
+                    class="case-action"
+                    data-case="title"
+                >
+                    <span>Aa</span>
+                    Title Case
+                </button>
+
+
+                <button
+                    type="button"
+                    class="case-action"
+                    data-case="sentence"
+                >
+                    <span>Ab</span>
+                    Sentence Case
+                </button>
+
+
+                <button
+                    type="button"
+                    class="case-action"
+                    data-case="toggle"
+                >
+                    <span>aA</span>
+                    Toggle Case
+                </button>
+
+            </div>
+
+
+
+            <!-- INFO -->
+
+            <div class="case-info">
+
+                <div>
+
+                    <strong id="caseWordCount">
+                        0
+                    </strong>
+
+                    <span>
+                        Words
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong id="caseCharTotal">
+                        0
+                    </strong>
+
+                    <span>
+                        Characters
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOTTOM BUTTONS -->
+
+            <div class="case-bottom">
+
+                <button
+                    type="button"
+                    id="caseCopy"
+                    class="case-copy"
+                >
+                    📋 Copy Text
+                </button>
+
+
+                <button
+                    type="button"
+                    id="caseClear"
+                    class="case-clear"
+                >
+                    🗑️ Clear
+                </button>
+
+            </div>
+
+
+            <div
+                id="caseMessage"
+                class="case-message"
+            ></div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Number Calculator | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="number-calc-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="number-calc-page">
+
+
+        <!-- HERO -->
+
+        <section class="number-calc-hero">
+
+            <div class="number-calc-icon">
+                ＋
+            </div>
+
+            <h1>
+                Number Calculator
+            </h1>
+
+            <p>
+                Fast and simple calculator for
+                everyday calculations.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CALCULATOR
+        ================================= -->
+
+        <section class="number-calculator">
+
+
+            <!-- DISPLAY -->
+
+            <div class="number-display">
+
+                <div
+                    id="numberExpression"
+                    class="number-expression"
+                ></div>
+
+                <div
+                    id="numberResult"
+                    class="number-result"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+
+            <!-- BUTTONS -->
+
+            <div class="number-buttons">
+
+
+                <button
+                    type="button"
+                    class="num-btn function"
+                    data-action="clear"
+                >
+                    AC
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn function"
+                    data-action="delete"
+                >
+                    DEL
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn function"
+                    data-value="%"
+                >
+                    %
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn operator"
+                    data-value="÷"
+                >
+                    ÷
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="7"
+                >
+                    7
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="8"
+                >
+                    8
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="9"
+                >
+                    9
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn operator"
+                    data-value="×"
+                >
+                    ×
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="4"
+                >
+                    4
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="5"
+                >
+                    5
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="6"
+                >
+                    6
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn operator"
+                    data-value="−"
+                >
+                    −
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="1"
+                >
+                    1
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="2"
+                >
+                    2
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="3"
+                >
+                    3
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn operator"
+                    data-value="+"
+                >
+                    +
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="num-btn zero"
+                    data-value="0"
+                >
+                    0
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn"
+                    data-value="."
+                >
+                    .
+                </button>
+
+
+                <button
+                    type="button"
+                    class="num-btn equals"
+                    data-action="calculate"
+                >
+                    =
+                </button>
+
+            </div>
+
+
+
+            <!-- HISTORY -->
+
+            <div class="number-history">
+
+                <div class="history-title">
+
+                    <strong>
+                        Recent Calculations
+                    </strong>
+
+                    <button
+                        type="button"
+                        id="clearHistory"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="historyList"
+                    class="history-list"
+                >
+
+                    <p>
+                        No calculations yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

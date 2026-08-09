@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Color Converter | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="color-converter-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a
+            href="index.html"
+            class="tool-brand"
+        >
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a
+            href="index.html"
+            class="tool-back"
+        >
+
+            <span>←</span>
+
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="color-converter-page">
+
+
+        <section class="color-converter-hero">
+
+            <div class="color-converter-icon">
+                🌈
+            </div>
+
+
+            <h1>
+                Color Converter
+            </h1>
+
+
+            <p>
+                Convert colors between HEX,
+                RGB and HSL instantly.
+            </p>
+
+        </section>
+
+
+
+        <!-- CONVERTER CARD -->
+
+        <section class="color-converter-card">
+
+
+            <!-- PREVIEW -->
+
+            <div
+                id="converterPreview"
+                class="converter-preview"
+            >
+
+                <span>
+                    Color Preview
+                </span>
+
+            </div>
+
+
+
+            <!-- FORMAT -->
+
+            <div class="converter-label">
+                Choose Color Format
+            </div>
+
+
+            <div class="format-buttons">
+
+                <button
+                    type="button"
+                    class="format-btn active"
+                    data-format="hex"
+                >
+                    HEX
+                </button>
+
+
+                <button
+                    type="button"
+                    class="format-btn"
+                    data-format="rgb"
+                >
+                    RGB
+                </button>
+
+
+                <button
+                    type="button"
+                    class="format-btn"
+                    data-format="hsl"
+                >
+                    HSL
+                </button>
+
+            </div>
+
+
+
+            <!-- INPUT -->
+
+            <div class="converter-input-box">
+
+                <label
+                    id="converterInputLabel"
+                    for="converterInput"
+                >
+                    HEX Color
+                </label>
+
+
+                <div class="converter-input-row">
+
+                    <input
+                        type="text"
+                        id="converterInput"
+                        value="#2563EB"
+                        placeholder="#2563EB"
+                        autocomplete="off"
+                    >
+
+
+                    <button
+                        type="button"
+                        id="convertColor"
+                        class="convert-btn"
+                    >
+                        Convert
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RESULTS -->
+
+            <div class="converter-results">
+
+
+                <div class="converter-result">
+
+                    <div>
+
+                        <span>HEX</span>
+
+                        <strong id="converterHex">
+                            #2563EB
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="converter-copy"
+                        data-copy="hex"
+                    >
+                        📋
+                    </button>
+
+                </div>
+
+
+
+                <div class="converter-result">
+
+                    <div>
+
+                        <span>RGB</span>
+
+                        <strong id="converterRgb">
+                            rgb(37, 99, 235)
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="converter-copy"
+                        data-copy="rgb"
+                    >
+                        📋
+                    </button>
+
+                </div>
+
+
+
+                <div class="converter-result">
+
+                    <div>
+
+                        <span>HSL</span>
+
+                        <strong id="converterHsl">
+                            hsl(217, 83%, 53%)
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="converter-copy"
+                        data-copy="hsl"
+                    >
+                        📋
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="converterMessage"
+                class="converter-message"
+            ></div>
+
+
+
+            <!-- RANDOM -->
+
+            <button
+                type="button"
+                id="randomConverterColor"
+                class="random-converter-btn"
+            >
+                🎲 Random Color
+            </button>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

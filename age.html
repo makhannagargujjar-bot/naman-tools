@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Age Calculator Pro | Naman Tools</title>
+
+<meta name="theme-color"
+content="#2563eb">
+
+<link rel="stylesheet"
+href="../style.css">
+
+<link rel="stylesheet"
+href="age.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+HEADER
+========================== -->
+
+<header class="tool-header">
+
+<a href="../index.html"
+class="back-btn">
+
+← Back
+
+</a>
+
+<h1>
+
+🎂 Age Calculator Pro
+
+</h1>
+
+</header>
+
+<!-- ==========================
+MAIN
+========================== -->
+
+<main class="age-page">
+
+<div class="age-container">
+
+<!-- Input Card -->
+
+<div class="age-input-card">
+
+<h2>
+
+Select Your Date of Birth
+
+</h2>
+
+<p>
+
+Calculate your exact live age instantly.
+
+</p>
+
+<div class="date-grid">
+
+<select id="day">
+
+<option value="">Day</option>
+
+</select>
+
+<select id="month">
+
+<option value="">Month</option>
+
+</select>
+
+<select id="year">
+
+<option value="">Year</option>
+
+</select>
+
+</div>
+
+<button
+id="calculateBtn">
+
+Calculate Age
+
+</button>
+
+</div>
+
+<!-- Live Age -->
+
+<div
+class="live-age-card">
+
+<h2>
+
+🎂 Your Live Age
+
+</h2>
+
+<div class="live-grid">
+
+<div class="live-box">
+
+<h1 id="liveYears">
+
+00
+
+</h1>
+
+<span>
+
+Years
+
+</span>
+
+</div>
+
+<div class="live-box">
+
+<h1 id="liveMonths">
+
+00
+
+</h1>
+
+<span>
+
+Months
+
+</span>
+
+</div>
+
+<div class="live-box">
+
+<h1 id="liveDays">
+
+00
+
+</h1>
+
+<span>
+
+Days
+
+</span>
+
+</div>
+
+<div class="live-box">
+
+<h1 id="liveHours">
+
+00
+
+</h1>
+
+<span>
+
+Hours
+
+</span>
+
+</div>
+
+<div class="live-box">
+
+<h1 id="liveMinutes">
+
+00
+
+</h1>
+
+<span>
+
+Minutes
+
+</span>
+
+</div>
+
+<div class="live-box">
+
+<h1 id="liveSeconds">
+
+00
+
+</h1>
+
+<span>
+
+Seconds
+
+</span>
+
+</div>
+
+</div>
+
+</div><!-- ==========================
+Detailed Statistics
+========================== -->
+
+<div class="stats-card">
+
+<h2>📊 Detailed Statistics</h2>
+
+<div class="stats-grid">
+
+<div class="stat-box">
+<h3 id="totalMonths">0</h3>
+<p>Total Months</p>
+</div>
+
+<div class="stat-box">
+<h3 id="totalWeeks">0</h3>
+<p>Total Weeks</p>
+</div>
+
+<div class="stat-box">
+<h3 id="totalDays">0</h3>
+<p>Total Days</p>
+</div>
+
+<div class="stat-box">
+<h3 id="totalHours">0</h3>
+<p>Total Hours</p>
+</div>
+
+<div class="stat-box">
+<h3 id="totalMinutes">0</h3>
+<p>Total Minutes</p>
+</div>
+
+<div class="stat-box">
+<h3 id="totalSeconds">0</h3>
+<p>Total Seconds</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- ==========================
+Birthday Information
+========================== -->
+
+<div class="info-card">
+
+<h2>🎉 Birthday Information</h2>
+
+<div class="info-item">
+
+<span>📅 Born On</span>
+
+<strong id="birthDay">
+-
+</strong>
+
+</div>
+
+<div class="info-item">
+
+<span>🎂 Next Birthday</span>
+
+<strong id="nextBirthday">
+-
+</strong>
+
+</div>
+
+<div class="info-item">
+
+<span>♓ Zodiac Sign</span>
+
+<strong id="zodiac">
+-
+</strong>
+
+</div>
+
+<div class="info-item">
+
+<span>🌍 Leap Year</span>
+
+<strong id="leapYear">
+-
+</strong>
+
+</div>
+
+</div>
+
+<!-- ==========================
+Action Buttons
+========================== -->
+
+<div class="action-card">
+
+<button id="shareBtn">
+
+📤 Share Result
+
+</button>
+
+<button id="pdfBtn">
+
+📄 Download PDF
+
+</button>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="age.js"></script>
+
+</body>
+
+</html>

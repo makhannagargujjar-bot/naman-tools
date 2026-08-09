@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>JSON Formatter | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="json-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="json-page">
+
+
+        <!-- HERO -->
+
+        <section class="json-hero">
+
+            <div class="json-icon">
+                { }
+            </div>
+
+            <h1>
+                JSON Formatter
+            </h1>
+
+            <p>
+                Format, validate and minify JSON
+                quickly and easily.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             TOOL CARD
+        ================================= -->
+
+        <section class="json-card">
+
+
+            <!-- INPUT -->
+
+            <div class="json-field">
+
+                <label for="jsonInput">
+                    Enter JSON
+                </label>
+
+                <textarea
+                    id="jsonInput"
+                    spellcheck="false"
+                    placeholder='Example: {"name":"Naman","age":20}'
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- ACTIONS -->
+
+            <div class="json-actions">
+
+                <button
+                    type="button"
+                    id="formatJson"
+                    class="json-primary-btn"
+                >
+                    Format JSON
+                </button>
+
+
+                <button
+                    type="button"
+                    id="minifyJson"
+                    class="json-secondary-btn"
+                >
+                    Minify
+                </button>
+
+            </div>
+
+
+
+            <!-- VALIDATE -->
+
+            <button
+                type="button"
+                id="validateJson"
+                class="json-validate-btn"
+            >
+                ✓ Validate JSON
+            </button>
+
+
+
+            <!-- RESULT -->
+
+            <div class="json-result-box">
+
+                <div class="json-result-header">
+
+                    <span>
+                        Result
+                    </span>
+
+                    <button
+                        type="button"
+                        id="copyJson"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="jsonResult"
+                    readonly
+                    spellcheck="false"
+                    placeholder="Formatted JSON will appear here..."
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- STATUS -->
+
+            <div
+                id="jsonStatus"
+                class="json-status"
+            >
+            </div>
+
+
+
+            <!-- CLEAR -->
+
+            <button
+                type="button"
+                id="clearJson"
+                class="json-clear-btn"
+            >
+                Clear
+            </button>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

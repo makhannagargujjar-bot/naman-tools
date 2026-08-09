@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Password Strength | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="strength-page-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a
+            href="index.html"
+            class="tool-brand"
+        >
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a
+            href="index.html"
+            class="tool-back"
+        >
+
+            <span>←</span>
+
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="strength-page">
+
+
+        <!-- HERO -->
+
+        <section class="strength-hero">
+
+            <div class="strength-icon">
+                🛡️
+            </div>
+
+
+            <h1>
+                Password Strength
+            </h1>
+
+
+            <p>
+                Check how strong and secure
+                your password is instantly.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CHECKER CARD
+        ================================= -->
+
+        <section class="strength-card">
+
+
+            <!-- PASSWORD INPUT -->
+
+            <div class="strength-input-box">
+
+                <input
+                    type="password"
+                    id="strengthPassword"
+                    placeholder="Enter your password"
+                    autocomplete="off"
+                >
+
+
+                <button
+                    type="button"
+                    id="toggleStrengthPassword"
+                    class="password-eye"
+                    aria-label="Show password"
+                >
+                    👁️
+                </button>
+
+            </div>
+
+
+
+            <!-- STRENGTH STATUS -->
+
+            <div class="strength-status">
+
+                <div class="strength-status-top">
+
+                    <span>
+                        Password Strength
+                    </span>
+
+
+                    <strong
+                        id="strengthStatus"
+                    >
+                        Enter Password
+                    </strong>
+
+                </div>
+
+
+                <div class="strength-meter">
+
+                    <span
+                        id="strengthMeter"
+                    ></span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- REQUIREMENTS -->
+
+            <div class="requirements">
+
+                <h2>
+                    Password Requirements
+                </h2>
+
+
+                <div
+                    class="requirement"
+                    id="reqLength"
+                >
+
+                    <span class="requirement-icon">
+                        ✓
+                    </span>
+
+                    <span>
+                        At least 8 characters
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="requirement"
+                    id="reqUpper"
+                >
+
+                    <span class="requirement-icon">
+                        ✓
+                    </span>
+
+                    <span>
+                        Contains uppercase letter
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="requirement"
+                    id="reqLower"
+                >
+
+                    <span class="requirement-icon">
+                        ✓
+                    </span>
+
+                    <span>
+                        Contains lowercase letter
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="requirement"
+                    id="reqNumber"
+                >
+
+                    <span class="requirement-icon">
+                        ✓
+                    </span>
+
+                    <span>
+                        Contains a number
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="requirement"
+                    id="reqSymbol"
+                >
+
+                    <span class="requirement-icon">
+                        ✓
+                    </span>
+
+                    <span>
+                        Contains a special symbol
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PASSWORD INFO -->
+
+            <div class="strength-info">
+
+                <div class="info-item">
+
+                    <strong id="passwordLengthCount">
+                        0
+                    </strong>
+
+                    <span>
+                        Characters
+                    </span>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <strong id="passwordScore">
+                        0/5
+                    </strong>
+
+                    <span>
+                        Requirements
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TIP -->
+
+            <div class="security-tip">
+
+                <span class="tip-icon">
+                    💡
+                </span>
+
+
+                <div>
+
+                    <strong>
+                        Security Tip
+                    </strong>
+
+                    <p id="securityTip">
+                        Use a long password with
+                        letters, numbers and symbols.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CLEAR -->
+
+            <button
+                type="button"
+                id="clearStrength"
+                class="clear-strength"
+            >
+                Clear Password
+            </button>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

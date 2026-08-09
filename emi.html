@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>EMI Calculator | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="emi-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="emi-page">
+
+
+        <!-- HERO -->
+
+        <section class="emi-hero">
+
+            <div class="emi-icon">
+                ₹
+            </div>
+
+
+            <h1>
+                EMI Calculator
+            </h1>
+
+
+            <p>
+                Calculate your monthly loan EMI,
+                total interest and total payment instantly.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CALCULATOR CARD
+        ================================= -->
+
+        <section class="emi-card">
+
+
+            <!-- LOAN AMOUNT -->
+
+            <div class="emi-field">
+
+                <label for="loanAmount">
+                    Loan Amount
+                </label>
+
+                <div class="emi-input-wrap">
+
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="loanAmount"
+                        value="500000"
+                        min="0"
+                        placeholder="Enter loan amount"
+                        inputmode="decimal"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INTEREST -->
+
+            <div class="emi-field">
+
+                <label for="interestRate">
+                    Interest Rate
+                </label>
+
+                <div class="emi-input-wrap">
+
+                    <input
+                        type="number"
+                        id="interestRate"
+                        value="8.5"
+                        min="0"
+                        step="0.01"
+                        placeholder="Annual interest rate"
+                        inputmode="decimal"
+                    >
+
+                    <span>%</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TENURE -->
+
+            <div class="emi-field">
+
+                <label for="loanTenure">
+                    Loan Tenure
+                </label>
+
+                <div class="emi-tenure-row">
+
+                    <input
+                        type="number"
+                        id="loanTenure"
+                        value="5"
+                        min="1"
+                        placeholder="Tenure"
+                        inputmode="numeric"
+                    >
+
+
+                    <select id="tenureType">
+
+                        <option value="years">
+                            Years
+                        </option>
+
+                        <option value="months">
+                            Months
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CALCULATE -->
+
+            <button
+                type="button"
+                id="calculateEMI"
+                class="emi-calculate-btn"
+            >
+                Calculate EMI
+            </button>
+
+
+
+            <!-- =================================
+                 RESULT
+            ================================= -->
+
+            <div class="emi-result-card">
+
+                <span>
+                    Your Monthly EMI
+                </span>
+
+
+                <strong id="emiResult">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+
+            <!-- SUMMARY -->
+
+            <div class="emi-summary">
+
+
+                <div class="emi-summary-box">
+
+                    <span>
+                        Principal
+                    </span>
+
+                    <strong id="principalResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="emi-summary-box">
+
+                    <span>
+                        Total Interest
+                    </span>
+
+                    <strong id="interestResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="emi-summary-box">
+
+                    <span>
+                        Total Payment
+                    </span>
+
+                    <strong id="totalResult">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- COPY -->
+
+            <button
+                type="button"
+                id="copyEMI"
+                class="emi-copy-btn"
+            >
+                📋 Copy Result
+            </button>
+
+
+            <div
+                id="emiMessage"
+                class="emi-message"
+            ></div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

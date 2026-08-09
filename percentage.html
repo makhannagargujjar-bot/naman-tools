@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Percentage Calculator | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="percentage-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a
+            href="index.html"
+            class="tool-brand"
+        >
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a
+            href="index.html"
+            class="tool-back"
+        >
+
+            <span>←</span>
+
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="percentage-page">
+
+
+        <!-- HERO -->
+
+        <section class="percentage-hero">
+
+            <div class="percentage-icon">
+                %
+            </div>
+
+
+            <h1>
+                Percentage Calculator
+            </h1>
+
+
+            <p>
+                Calculate percentages quickly,
+                accurately and easily.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CALCULATOR
+        ================================= -->
+
+        <section class="percentage-card">
+
+
+            <!-- MODE TABS -->
+
+            <div class="percentage-tabs">
+
+                <button
+                    class="percentage-tab active"
+                    data-mode="percentOf"
+                    type="button"
+                >
+                    % of Number
+                </button>
+
+
+                <button
+                    class="percentage-tab"
+                    data-mode="whatPercent"
+                    type="button"
+                >
+                    What %
+                </button>
+
+
+                <button
+                    class="percentage-tab"
+                    data-mode="increaseDecrease"
+                    type="button"
+                >
+                    Change %
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MODE 1
+            ================================= -->
+
+            <div
+                class="percentage-mode active"
+                id="percentOfMode"
+            >
+
+                <div class="percentage-question">
+
+                    <strong>
+                        What is
+                        <span>%</span>
+                        of a number?
+                    </strong>
+
+                </div>
+
+
+                <label>
+                    Percentage
+                </label>
+
+
+                <input
+                    type="number"
+                    id="percentInput"
+                    class="percentage-input"
+                    placeholder="Enter percentage"
+                    inputmode="decimal"
+                >
+
+
+                <label>
+                    Number
+                </label>
+
+
+                <input
+                    type="number"
+                    id="numberInput"
+                    class="percentage-input"
+                    placeholder="Enter number"
+                    inputmode="decimal"
+                >
+
+
+                <div class="percentage-result">
+
+                    <span>
+                        Result
+                    </span>
+
+                    <strong id="percentOfResult">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MODE 2
+            ================================= -->
+
+            <div
+                class="percentage-mode"
+                id="whatPercentMode"
+            >
+
+                <div class="percentage-question">
+
+                    <strong>
+                        What percentage is
+                        <span>part</span>
+                        of
+                        <span>total</span>?
+                    </strong>
+
+                </div>
+
+
+                <label>
+                    Part
+                </label>
+
+
+                <input
+                    type="number"
+                    id="partInput"
+                    class="percentage-input"
+                    placeholder="Enter part"
+                    inputmode="decimal"
+                >
+
+
+                <label>
+                    Total
+                </label>
+
+
+                <input
+                    type="number"
+                    id="totalInput"
+                    class="percentage-input"
+                    placeholder="Enter total"
+                    inputmode="decimal"
+                >
+
+
+                <div class="percentage-result">
+
+                    <span>
+                        Result
+                    </span>
+
+                    <strong id="whatPercentResult">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MODE 3
+            ================================= -->
+
+            <div
+                class="percentage-mode"
+                id="increaseDecreaseMode"
+            >
+
+                <div class="percentage-question">
+
+                    <strong>
+                        Calculate percentage change
+                    </strong>
+
+                </div>
+
+
+                <label>
+                    Original Value
+                </label>
+
+
+                <input
+                    type="number"
+                    id="originalInput"
+                    class="percentage-input"
+                    placeholder="Enter original value"
+                    inputmode="decimal"
+                >
+
+
+                <label>
+                    New Value
+                </label>
+
+
+                <input
+                    type="number"
+                    id="newInput"
+                    class="percentage-input"
+                    placeholder="Enter new value"
+                    inputmode="decimal"
+                >
+
+
+                <div class="percentage-result">
+
+                    <span>
+                        Percentage Change
+                    </span>
+
+                    <strong id="changeResult">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COPY -->
+
+            <button
+                type="button"
+                id="copyPercentageResult"
+                class="copy-percentage-btn"
+            >
+                📋 Copy Result
+            </button>
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="percentageMessage"
+                class="percentage-message"
+            ></div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

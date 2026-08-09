@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Color Picker | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="color-page-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a
+            href="index.html"
+            class="tool-brand"
+        >
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a
+            href="index.html"
+            class="tool-back"
+        >
+
+            <span>←</span>
+
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="color-page">
+
+
+        <!-- HERO -->
+
+        <section class="color-hero">
+
+            <div class="color-icon">
+                🎨
+            </div>
+
+
+            <h1>
+                Color Picker
+            </h1>
+
+
+            <p>
+                Pick any color and get its
+                HEX, RGB and HSL codes instantly.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             COLOR CARD
+        ================================= -->
+
+        <section class="color-card">
+
+
+            <!-- COLOR PREVIEW -->
+
+            <div
+                class="color-preview"
+                id="colorPreview"
+            >
+
+                <span>
+                    Selected Color
+                </span>
+
+            </div>
+
+
+
+            <!-- COLOR PICKER -->
+
+            <div class="color-picker-box">
+
+                <label for="colorInput">
+                    Choose a Color
+                </label>
+
+
+                <input
+                    type="color"
+                    id="colorInput"
+                    value="#2563eb"
+                >
+
+            </div>
+
+
+
+            <!-- COLOR VALUES -->
+
+            <div class="color-values">
+
+
+                <!-- HEX -->
+
+                <div class="color-value">
+
+                    <div>
+
+                        <span>
+                            HEX
+                        </span>
+
+                        <strong id="hexValue">
+                            #2563EB
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="copy-color"
+                        data-copy="hex"
+                    >
+                        📋
+                    </button>
+
+                </div>
+
+
+
+                <!-- RGB -->
+
+                <div class="color-value">
+
+                    <div>
+
+                        <span>
+                            RGB
+                        </span>
+
+                        <strong id="rgbValue">
+                            rgb(37, 99, 235)
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="copy-color"
+                        data-copy="rgb"
+                    >
+                        📋
+                    </button>
+
+                </div>
+
+
+
+                <!-- HSL -->
+
+                <div class="color-value">
+
+                    <div>
+
+                        <span>
+                            HSL
+                        </span>
+
+                        <strong id="hslValue">
+                            hsl(217, 83%, 53%)
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="copy-color"
+                        data-copy="hsl"
+                    >
+                        📋
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COPY MESSAGE -->
+
+            <div
+                id="colorCopyMessage"
+                class="color-copy-message"
+            ></div>
+
+
+
+            <!-- RANDOM COLOR -->
+
+            <button
+                type="button"
+                id="randomColor"
+                class="random-color-btn"
+            >
+                🎲 Generate Random Color
+            </button>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Text Reverser | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="reverse-body">
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+        <a href="index.html" class="tool-back">
+            <span>←</span>
+            <span>Back</span>
+        </a>
+
+    </header>
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="reverse-page">
+
+        <!-- HERO -->
+
+        <section class="reverse-hero">
+
+            <div class="reverse-icon">
+                ↔
+            </div>
+
+            <h1>
+                Text Reverser
+            </h1>
+
+            <p>
+                Reverse your text, words or letters
+                instantly and easily.
+            </p>
+
+        </section>
+
+
+        <!-- TOOL CARD -->
+
+        <section class="reverse-card">
+
+            <!-- INPUT -->
+
+            <div class="reverse-field">
+
+                <label for="reverseInput">
+                    Enter Your Text
+                </label>
+
+                <textarea
+                    id="reverseInput"
+                    spellcheck="false"
+                    placeholder="Type or paste your text here..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- OPTIONS -->
+
+            <div class="reverse-options">
+
+                <button
+                    type="button"
+                    class="reverse-option active"
+                    data-mode="characters"
+                >
+                    Characters
+                </button>
+
+                <button
+                    type="button"
+                    class="reverse-option"
+                    data-mode="words"
+                >
+                    Words
+                </button>
+
+                <button
+                    type="button"
+                    class="reverse-option"
+                    data-mode="lines"
+                >
+                    Lines
+                </button>
+
+            </div>
+
+
+            <!-- REVERSE -->
+
+            <button
+                type="button"
+                id="reverseBtn"
+                class="reverse-primary-btn"
+            >
+                Reverse Text
+            </button>
+
+
+            <!-- RESULT -->
+
+            <div class="reverse-result-box">
+
+                <div class="reverse-result-header">
+
+                    <span>
+                        Result
+                    </span>
+
+                    <button
+                        type="button"
+                        id="copyReverse"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+                <textarea
+                    id="reverseResult"
+                    readonly
+                    spellcheck="false"
+                    placeholder="Your reversed text will appear here..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- STATUS -->
+
+            <div
+                id="reverseStatus"
+                class="reverse-status"
+            ></div>
+
+
+            <!-- CLEAR -->
+
+            <button
+                type="button"
+                id="clearReverse"
+                class="reverse-clear-btn"
+            >
+                Clear
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

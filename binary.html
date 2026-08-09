@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Decimal Binary Converter | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="binary-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="binary-page">
+
+
+        <!-- HERO -->
+
+        <section class="binary-hero">
+
+            <div class="binary-icon">
+                01
+            </div>
+
+            <h1>
+                Decimal / Binary
+            </h1>
+
+            <p>
+                Convert decimal numbers to binary
+                and binary numbers to decimal instantly.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CONVERTER CARD
+        ================================= -->
+
+        <section class="binary-card">
+
+
+            <!-- DECIMAL -->
+
+            <div class="binary-field">
+
+                <label for="decimalInput">
+                    Decimal Number
+                </label>
+
+                <input
+                    type="number"
+                    id="decimalInput"
+                    placeholder="Enter decimal number"
+                    inputmode="numeric"
+                >
+
+            </div>
+
+
+
+            <!-- BINARY -->
+
+            <div class="binary-field">
+
+                <label for="binaryInput">
+                    Binary Number
+                </label>
+
+                <input
+                    type="text"
+                    id="binaryInput"
+                    placeholder="Enter binary number (0 or 1)"
+                    inputmode="numeric"
+                >
+
+            </div>
+
+
+
+            <!-- BUTTONS -->
+
+            <div class="binary-actions">
+
+                <button
+                    type="button"
+                    id="decimalToBinary"
+                    class="binary-primary-btn"
+                >
+                    Decimal → Binary
+                </button>
+
+
+                <button
+                    type="button"
+                    id="binaryToDecimal"
+                    class="binary-secondary-btn"
+                >
+                    Binary → Decimal
+                </button>
+
+            </div>
+
+
+
+            <!-- RESULT -->
+
+            <div class="binary-result">
+
+                <span>
+                    Result
+                </span>
+
+                <strong id="binaryResult">
+                    —
+                </strong>
+
+            </div>
+
+
+
+            <!-- CLEAR -->
+
+            <button
+                type="button"
+                id="binaryClear"
+                class="binary-clear-btn"
+            >
+                Clear
+            </button>
+
+
+            <div
+                id="binaryMessage"
+                class="binary-message"
+            ></div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Date Difference | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="date-diff-body">
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="date-diff-page">
+
+
+        <!-- HERO -->
+
+        <section class="date-diff-hero">
+
+            <div class="date-diff-icon">
+                📅
+            </div>
+
+            <h1>
+                Date Difference
+            </h1>
+
+            <p>
+                Find the exact difference between
+                two dates in seconds.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CALCULATOR
+        ================================= -->
+
+        <section class="date-diff-card">
+
+
+            <!-- START DATE -->
+
+            <div class="date-field">
+
+                <label for="startDate">
+                    Start Date
+                </label>
+
+                <input
+                    type="date"
+                    id="startDate"
+                >
+
+            </div>
+
+
+
+            <!-- END DATE -->
+
+            <div class="date-field">
+
+                <label for="endDate">
+                    End Date
+                </label>
+
+                <input
+                    type="date"
+                    id="endDate"
+                >
+
+            </div>
+
+
+
+            <!-- CALCULATE -->
+
+            <button
+                type="button"
+                id="calculateDateDifference"
+                class="date-calculate-btn"
+            >
+                Calculate Difference
+            </button>
+
+
+
+            <!-- RESULT -->
+
+            <div class="date-main-result">
+
+                <span>
+                    Difference
+                </span>
+
+                <strong id="dateMainResult">
+                    0 Days
+                </strong>
+
+            </div>
+
+
+
+            <!-- DETAILS -->
+
+            <div class="date-result-grid">
+
+
+                <div class="date-result-box">
+
+                    <span>
+                        Years
+                    </span>
+
+                    <strong id="dateYears">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="date-result-box">
+
+                    <span>
+                        Months
+                    </span>
+
+                    <strong id="dateMonths">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="date-result-box">
+
+                    <span>
+                        Days
+                    </span>
+
+                    <strong id="dateDays">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="date-result-box">
+
+                    <span>
+                        Total Days
+                    </span>
+
+                    <strong id="dateTotalDays">
+                        0
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- COPY -->
+
+            <button
+                type="button"
+                id="copyDateDifference"
+                class="date-copy-btn"
+            >
+                📋 Copy Result
+            </button>
+
+
+            <div
+                id="dateMessage"
+                class="date-message"
+            ></div>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

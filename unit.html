@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Unit Converter | Naman Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="unit-converter-body">
+
+
+    <!-- =================================
+         TOOL HEADER
+    ================================= -->
+
+    <header class="tool-top-header">
+
+        <a href="index.html" class="tool-brand">
+
+            <span class="tool-brand-icon">
+                NT
+            </span>
+
+            <span class="tool-brand-name">
+                Naman Tools
+            </span>
+
+        </a>
+
+
+        <a href="index.html" class="tool-back">
+
+            <span>←</span>
+
+            <span>Back</span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN
+    ================================= -->
+
+    <main class="unit-converter-page">
+
+
+        <!-- HERO -->
+
+        <section class="unit-converter-hero">
+
+            <div class="unit-converter-icon">
+                📏
+            </div>
+
+
+            <h1>
+                Unit Converter
+            </h1>
+
+
+            <p>
+                Convert length, weight, temperature
+                and more instantly.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             CONVERTER CARD
+        ================================= -->
+
+        <section class="unit-converter-card">
+
+
+            <!-- CATEGORY -->
+
+            <label class="unit-label">
+                Conversion Type
+            </label>
+
+
+            <select
+                id="unitCategory"
+                class="unit-select"
+            >
+
+                <option value="length">
+                    Length
+                </option>
+
+                <option value="weight">
+                    Weight
+                </option>
+
+                <option value="temperature">
+                    Temperature
+                </option>
+
+                <option value="area">
+                    Area
+                </option>
+
+                <option value="volume">
+                    Volume
+                </option>
+
+                <option value="time">
+                    Time
+                </option>
+
+            </select>
+
+
+
+            <!-- VALUE -->
+
+            <label class="unit-label">
+                Enter Value
+            </label>
+
+
+            <input
+                type="number"
+                id="unitValue"
+                class="unit-input"
+                placeholder="Enter value"
+                value="1"
+                inputmode="decimal"
+            >
+
+
+
+            <!-- FROM / TO -->
+
+            <div class="unit-row">
+
+
+                <div class="unit-field">
+
+                    <label class="unit-label">
+                        From
+                    </label>
+
+
+                    <select
+                        id="fromUnit"
+                        class="unit-select"
+                    ></select>
+
+                </div>
+
+
+
+                <button
+                    type="button"
+                    id="swapUnits"
+                    class="swap-unit-btn"
+                    aria-label="Swap units"
+                >
+                    ⇄
+                </button>
+
+
+
+                <div class="unit-field">
+
+                    <label class="unit-label">
+                        To
+                    </label>
+
+
+                    <select
+                        id="toUnit"
+                        class="unit-select"
+                    ></select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RESULT -->
+
+            <div class="unit-result-box">
+
+                <span>
+                    Result
+                </span>
+
+
+                <strong id="unitResult">
+                    3.28084 ft
+                </strong>
+
+            </div>
+
+
+
+            <!-- COPY -->
+
+            <button
+                type="button"
+                id="copyUnitResult"
+                class="copy-unit-btn"
+            >
+                📋 Copy Result
+            </button>
+
+
+            <div
+                id="unitMessage"
+                class="unit-message"
+            ></div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
